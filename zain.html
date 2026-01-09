@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ZA Mobiles & Repairing Lab - Mobile Accessories & Repair Services
+    </title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Custom animations and styles */
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slide-up {
+        animation: slideInUp 0.6s ease-out;
+      }
+      .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-left: 40px;
+        /* background: #fff;
+      padding: 5px; */
+      }
+
+      .logo h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- ========== NAVBAR ========== -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="text-xl md:text-2xl font-bold">
+            <div class="logo">
+              <img src="imag/logo.png" alt="ZA Logo" />
+              <a href="#home" class="hover:text-green-400 transition"
+                >ZA Mobiles
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Desktop Navigation -->
+          <div id="nav-menu" class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-green-400 transition">Home</a>
+            <a href="#shop" class="hover:text-green-400 transition">Shop</a>
+            <a href="#repair-services" class="hover:text-green-400 transition"
+              >Repair Services</a
+            >
+            <a href="#book-repair" class="hover:text-green-400 transition"
+              >Book Repair</a
+            >
+            <a href="#contact" class="hover:text-green-400 transition"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+          <a href="#home" class="block hover:text-green-400 transition py-2"
+            >Home</a
+          >
+          <a href="#shop" class="block hover:text-green-400 transition py-2"
+            >Shop</a
+          >
+          <a
+            href="#repair-services"
+            class="block hover:text-green-400 transition py-2"
+            >Repair Services</a
+          >
+          <a
+            href="#book-repair"
+            class="block hover:text-green-400 transition py-2"
+            >Book Repair</a
+          >
+          <a href="#contact" class="block hover:text-green-400 transition py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section
+      id="home"
+      class="relative text-white py-20 md:py-32 bg-cover bg-center"
+      style="background-image: url('imag/bnr.jpg')"
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <!-- Content -->
+      <div class="relative container mx-auto px-4 text-center animate-slide-up">
+        <p class="text-green-400 text-sm md:text-base mb-4 font-semibold">
+          Watches • Chargers • Earphones • Power Banks
+        </p>
+
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Mobile Repairs & Accessories – All in One Place
+        </h1>
+
+        <p class="text-gray-300 text-base md:text-lg mb-8 max-w-2xl mx-auto">
+          Quality mobile accessories and professional repair services at
+          affordable prices
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#shop"
+            class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition shadow-lg"
+          >
+            Shop Accessories
+          </a>
+
+          <a
+            href="#book-repair"
+            class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition shadow-lg"
+          >
+            Book Repair Appointment
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SHOP SECTION ========== -->
+    <section id="shop" class="py-16 md:py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Shop Accessories
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Premium quality products at affordable prices
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+        >
+          <!-- Product Card 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/watch.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                A68 Plus Ladies Smart Watch
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 3,000</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Stylish Ladies Smartwatch with 3 Straps, Bracelet, Ring &
+                Jewelry Set
+              </p>
+              <button
+                onclick="orderOnWhatsApp('A68 Plus Ladies Smart Watch', '3000')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/45wat.jpeg"
+              alt="Fast Charger"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Fast Charger 45W
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 3,000</p>
+              <p class="text-gray-600 text-sm mb-4">
+                45W Ultra Fast USB C Charger Socket, PPS Power Adapter Fast
+                Charging
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Fast Charger 45W', '3000')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/powrbank.jpeg"
+              alt="Power Bank"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Power Bank 10000mAh
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 2,500</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Power Bank (10000mAh) for 5x Devices with 3 in 1 cable included
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Power Bank 10000mAh', '2500')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/cabl.jpeg"
+              alt="USB Cable"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                AWA Micro USB Cable
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 300</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Fast Charging 2.4A High Quality Micro USB Data Cable
+              </p>
+              <button
+                onclick="orderOnWhatsApp('AWA Micro USB Cable', '300')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 5 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/33WAT.jpeg"
+              alt="USB Cable"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                33W Fast Charger
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 600</p>
+              <p class="text-gray-600 text-sm mb-4">
+                33W Fast Charger with Type C Cable | Oppo Super Vooc 33W Adapter
+                with Type C Cable | F19s, F21 Pro, F21S Pro, K10, K10 5G USB A
+                Adapter
+              </p>
+              <button
+                onclick="orderOnWhatsApp('33W Fast Charger', '600')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 6 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/arbtry.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                AR battery for Nokia
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 600</p>
+              <p class="text-gray-600 text-sm mb-4">
+                AR Li-ion Battery for Nokia 5800XM, 5530XM, 5230, 5233, 5235,
+                C5-00, X6, N97, N97 Mini, 5800 XpressMusic - 1320mAh ".
+              </p>
+              <button
+                onclick="orderOnWhatsApp('AR battery for Nokia', '600')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 7 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/600airfon.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                AR universal Handfree
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 600</p>
+              <p class="text-gray-600 text-sm mb-4">
+                AR universal Handfree wholesale price available , Best scound
+                experience with noice consolation Heavy Base Quality".
+              </p>
+              <button
+                onclick="orderOnWhatsApp('AR universal Handfree', '600')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 8 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/200aitfon.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Handree Normal Range
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 200</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Handree Normal Range best experience in 200 price wholesale
+                price available , Best scound experience with Base Quality".
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Handree Normal Range', '200')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 9 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/airpods.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">AirPods Pro</h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 1,500</p>
+              <p class="text-gray-600 text-sm mb-4">
+                AirPods Pro (High-Quality) | Wireless Bluetooth Earbuds | Noise
+                Cancellation | Touch Control | For All Phones
+              </p>
+              <button
+                onclick="orderOnWhatsApp('AirPods Pro', '1,500')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 10 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/loginairfon.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Login Handfree
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 550</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Experience smooth sound and style Login’s Handsfree in Pakistan
+                Login Smart Technology delivers you the best handsfree in
+                Pakistan
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Login Handfree', '550')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 11 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/HMB.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">HMB Charger</h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 250</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Our HMB Charger gives you super-fast power, smart protection,
+                and premium build quality — perfect for every mobile use
+              </p>
+              <button
+                onclick="orderOnWhatsApp('HMB Charger', '250')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 12-->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/powrbnk.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Power Bank 20000Mah
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 4500</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Power Bank 66W - PD Power Bank 20000 mAh Fast Charging - Power
+                Bank For Android - Dual Ports Power Bank - Portable Power Banks
+                - Super Fast Charging With LED Display Lights
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Power Bank 20000Mah', '4500')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 13 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/nmb.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">NMB Handfree</h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 200</p>
+              <p class="text-gray-600 text-sm mb-4">
+                NMB Handsfree Black – 100% Original Pure Handsfree , High
+                Quality Deep Bass / Sound – Earphones – Headphones – Handsfree
+              </p>
+              <button
+                onclick="orderOnWhatsApp('NMB Handfree', '200')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 14 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/chargr.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                AWA ultra fast Charger
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 600</p>
+              <p class="text-gray-600 text-sm mb-4">
+                AWA ultra fast Charger 4.5A 1xType C + 2xUSB Ports (TYPE C),
+                best charger, multiple port charger, Charger with light
+                indicator.
+              </p>
+              <button
+                onclick="orderOnWhatsApp('AWA ultra fast Charger ', '600')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 15 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/airbds.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Airbuds</h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 1300</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Airbuds True Wireless Bluetooth Earbuds With Deep Rich Bass| Pop
+                Up Window Pairing | Noise Cancellation | Touch Sensor
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Airbuds ', '1300')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 16 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/appl cbl.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                USB-C to Lightning Cable
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 650</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Enhance your device connectivity in Pakistan with the Apple
+                USB-C to Lightning Cable. Available now
+              </p>
+              <button
+                onclick="orderOnWhatsApp(' USB-C to Lightning Cable', '650')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 17 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/intrlink.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                PRIME PLUS Handsfree
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 850</p>
+              <p class="text-gray-600 text-sm mb-4">
+                PRIME PLUS Handsfree – Type-C Earphones with HD Mic | Designed
+                For Latest Type C phones.
+              </p>
+              <button
+                onclick="orderOnWhatsApp('PRIME PLUS Handsfree', '850')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 18 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/intrlink hfry.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Interlink Handsfree
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 550</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Interlink Handsfree – Type-C Earphones with HD Mic | Handfeee
+                (Soft) Very High Quality sound and Base available fresh Stock
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Interlink Handsfree', '550')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 19 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/watch 10.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Series 10 ultra Gold Smart Watch
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 2500</p>
+              <p class="text-gray-600 text-sm mb-4">
+                Series 10 ultra Gold Smart Watch – Latest Model with Advanced
+                Features , Stylish Ladies Smartwatch with 7 Straps
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Series 10 ultra Gold Smart Watch', '2500')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 19 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <img
+              src="imag/cbl pro.jpeg"
+              alt="Smart Watch"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Original Turbo Charge Cable
+              </h3>
+              <p class="text-green-600 text-2xl font-bold mb-3">Rs. 650</p>
+              <p class="text-gray-600 text-sm mb-4">
+                 120W Type C |  33W | Turbo Type C 67W |  Cable 120W |
+                Turbo Charging Type C for Mi 
+                11/ 11X Pro/ 10 Pro/ Note 10/ 10T Pro/ 10 Lite/ Note 10 Pro
+              </p>
+              <button
+                onclick="orderOnWhatsApp('Original Turbo Charge Cable', '650')"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Buy on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REPAIR SERVICES SECTION ========== -->
+    <section id="repair-services" class="py-16 md:py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Repair Services
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Professional mobile repair services by certified technicians
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
+          <!-- Service Card 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Screen Repair</h3>
+            <p class="text-gray-600 mb-4">
+              Cracked or damaged screen? We replace it with original quality
+              parts in 30 minutes.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 1,500 To Rs 5,000
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Battery Replacement
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Poor battery life? We replace with high-capacity genuine batteries
+              with warranty.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 500 To Rs 2,000
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Charging Port Repair
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Phone not charging? We fix or replace charging ports quickly and
+              affordably.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 500 To Rs 1,500
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Speaker & Mic Repair
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Audio issues? We repair or replace speakers and microphones for
+              clear sound.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 300 To Rs 800
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Camera Repair</h3>
+            <p class="text-gray-600 mb-4">
+              Blurry or broken camera? We repair front and back cameras with
+              precision.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 800 To Rs 1,500
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
+              Water Damage Repair
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Phone got wet? Bring it immediately for water damage assessment
+              and repair.
+            </p>
+            <p class="text-green-600 font-bold text-lg mb-4">
+              Starting from Rs. 1,000 To Rs 3,000
+            </p>
+            <a
+              href="#book-repair"
+              class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold transition"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REPAIR BOOKING SECTION ========== -->
+    <section id="book-repair" class="py-16 md:py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Book Repair Appointment
+            </h2>
+            <p class="text-gray-600 text-lg">
+              Fill out the form below and we'll contact you via WhatsApp
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <form id="repair-booking-form" class="space-y-5">
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Your Name *</label
+                >
+                <input
+                  type="text"
+                  id="customer-name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Phone Number *</label
+                >
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="e.g., 03001234567"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Mobile Brand & Model *</label
+                >
+                <input
+                  type="text"
+                  id="mobile-model"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="e.g., Samsung Galaxy S21"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Issue Description *</label
+                >
+                <textarea
+                  id="issue-description"
+                  required
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Describe the problem with your device"
+                ></textarea>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >Preferred Date</label
+                >
+                <input
+                  type="date"
+                  id="preferred-date"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-lg font-semibold text-lg transition flex items-center justify-center gap-2"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Book via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT / FOOTER ========== -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Company Info -->
+          <div>
+            <h3 class="text-2xl font-bold mb-4">ZA Mobiles & Repairing Lab</h3>
+            <p class="text-gray-400 mb-4">
+              Watches • Chargers • Earphones • Power Banks
+            </p>
+            <p class="text-gray-400">
+              Your trusted partner for quality mobile accessories and
+              professional repair services.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#shop"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Shop Accessories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#repair-services"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Repair Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#book-repair"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Book Appointment</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+                <a
+                  href="tel:+923071792302"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >+92 307 1792302</a
+                >
+              </div>
+              <div>
+                <h4 class="text--lg font-bold mb-4">Address</h4>
+                <h2>
+                  Main Khurrianwala Jaranwala Road Mobile Market ZA Zain Mobile
+                  & Repairing Lab Khurrianwala, Faisalabad.
+                </h2>
+              </div>
+
+              <a
+                href="https://wa.me/923071792302"
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold transition"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </a>
+              
+            </div>
+          </div>
+        </div>
+        
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>
+            © 2026 ZA Mobiles & Repairing Lab. All rights reserved. | Order &
+            Book via WhatsApp
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+      // ========== CONFIGURATION ==========
+      // Change WhatsApp number here (format: country code + number without +)
+      const WHATSAPP_NUMBER = "923071792302";
+
+      // ========== MOBILE MENU TOGGLE ==========
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // ========== SMOOTH SCROLLING ==========
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // ========== WHATSAPP ORDER FUNCTIONALITY ==========
+      /**
+       * Opens WhatsApp with pre-filled product order message
+       * @param {string} productName - Name of the product
+       * @param {string} price - Price of the product
+       */
+      function orderOnWhatsApp(productName, price) {
+        const message = `Hello ZA Mobiles, I want to order:\n\nProduct Name: ${productName}\nPrice: Rs. ${price}`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      // ========== REPAIR BOOKING FORM ==========
+      const repairForm = document.getElementById("repair-booking-form");
+
+      repairForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const name = document.getElementById("customer-name").value.trim();
+        const phone = document.getElementById("customer-phone").value.trim();
+        const model = document.getElementById("mobile-model").value.trim();
+        const issue = document.getElementById("issue-description").value.trim();
+        const date = document.getElementById("preferred-date").value;
+
+        // Validate required fields
+        if (!name || !phone || !model || !issue) {
+          alert("Please fill in all required fields");
+          return;
+        }
+
+        // Build WhatsApp message
+        let message = `🔧 *Repair Appointment Booking*\n\n`;
+        message += `👤 *Name:* ${name}\n`;
+        message += `📱 *Phone:* ${phone}\n`;
+        message += `📲 *Mobile Model:* ${model}\n`;
+        message += `❗ *Issue:* ${issue}\n`;
+
+        if (date) {
+          message += `📅 *Preferred Date:* ${date}\n`;
+        }
+
+        message += `\nPlease confirm my appointment. Thank you!`;
+
+        // Encode and open WhatsApp
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+        window.open(whatsappURL, "_blank");
+
+        // Optional: Reset form after submission
+        repairForm.reset();
+      });
+
+      // ========== SET MINIMUM DATE FOR BOOKING ==========
+      // Set minimum date to today for the date picker
+      const dateInput = document.getElementById("preferred-date");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.setAttribute("min", today);
+
+      // ========== SCROLL ANIMATION (OPTIONAL) ==========
+      // Add fade-in animation when elements come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe product and service cards
+      document.querySelectorAll(".card, .bg-white").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
